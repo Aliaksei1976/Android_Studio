@@ -1,0 +1,10 @@
+1. Установка Android Studio
+2. Установка .apk файла '001_ToDoList-master', извлечение архива, установка .apk файла в приложении Android Studio.
+3. Подключение через data-кабель и синхронизация приложения с внешним мобильным устройством Android (Sumsung J3).
+4. Активация установки мобильного приложения из AndroidStudio на внешнее мобильное устройство Android.
+5. Окончание загрузки приложения, функциональные тесты приложения ToDoList-master.
+6. Отключение внешнего мобильного устройства, деактивация работы приложения Android Studio.
+
+Video Google Disk
+
+https://drive.google.com/file/d/1R9ixbRdvaMqRR2RPWmdwoeZVDR0A-ZDc/view?usp=sharing
