@@ -1,0 +1,27 @@
+72467:11-15 13:14:10.478  3095  3095 D GameManagerService: identifyGamePackage. com.android.todolist, mCurrentUserId: 0, callerUserId: 0
+72468:11-15 13:14:10.478  3095  3095 D GamePkgDataHelper: getGamePkgData(). com.android.todolist
+72470:11-15 13:14:10.480  3095  3095 D GameManagerService: identifyGamePackage. com.android.todolist, mCurrentUserId: 0, callerUserId: 0
+72471:11-15 13:14:10.480  3095  3095 D GamePkgDataHelper: getGamePkgData(). com.android.todolist
+72493:11-15 13:14:11.026  3095  3225 I clp-JNI : Add pinfo) ff92bc1 com.android.todolist/com.android.todolist.MainActivity (server) : AppWindowToken{4f47318 token=Token{2e816fb ActivityRecord{484208a u0 com.android.todolist/.MainActivity t33}}} : 389 : 10395 : 1
+72497:11-15 13:14:11.031  3095  3095 D GameManagerService: identifyGamePackage. com.android.todolist, mCurrentUserId: 0, callerUserId: 0
+72498:11-15 13:14:11.031  3095  3095 D GamePkgDataHelper: getGamePkgData(). com.android.todolist
+72500:11-15 13:14:11.032  3095  3095 D GameManagerService: identifyGamePackage. com.android.todolist, mCurrentUserId: 0, callerUserId: 0
+72501:11-15 13:14:11.032  3095  3095 D GamePkgDataHelper: getGamePkgData(). com.android.todolist
+72550:11-15 13:14:11.519  3095  3225 I clp-JNI : Add pinfo) ff92bc1 com.android.todolist/com.android.todolist.MainActivity (server) : AppWindowToken{4f47318 token=Token{2e816fb ActivityRecord{484208a u0 com.android.todolist/.MainActivity t33}}} : 389 : 10395 : 1
+72554:11-15 13:14:11.523  3095  3095 D GameManagerService: identifyGamePackage. com.android.todolist, mCurrentUserId: 0, callerUserId: 0
+72555:11-15 13:14:11.524  3095  3095 D GamePkgDataHelper: getGamePkgData(). com.android.todolist
+72557:11-15 13:14:11.525  3095  3095 D GameManagerService: identifyGamePackage. com.android.todolist, mCurrentUserId: 0, callerUserId: 0
+72558:11-15 13:14:11.525  3095  3095 D GamePkgDataHelper: getGamePkgData(). com.android.todolist
+72582:11-15 13:14:12.178  3095  3225 I clp-JNI : Add pinfo) ff92bc1 com.android.todolist/com.android.todolist.MainActivity (server) : AppWindowToken{4f47318 token=Token{2e816fb ActivityRecord{484208a u0 com.android.todolist/.MainActivity t33}}} : 389 : 10395 : 1
+72595:11-15 13:14:12.342  2655  2655 I SurfaceFlinger: id=1432 createSurf (2560x2560),2 flag=4, 79fa104 com.android.todolist/com.android.todolist.MainActivity#0
+72596:11-15 13:14:12.344  3095  3534 V WindowManager: Changing focus from Window{ff92bc1 u0 com.android.todolist/com.android.todolist.MainActivity} to Window{79fa104 u0 com.android.todolist/com.android.todolist.MainActivity} Callers=com.android.server.wm.WindowManagerService.addWindow:1816 com.android.server.wm.Session.addToDisplayForTranslate:250 com.android.server.wm.Session.addToDisplay:239 android.view.IWindowSession$Stub.onTransact:129
+72601:11-15 13:14:12.346  3095  3129 D WindowManager: reportFocusChangedSerialized, focused=true, inTouchMode=true, win=Window{79fa104 u0 com.android.todolist/com.android.todolist.MainActivity}
+72604:11-15 13:14:12.390  3095  3534 V WindowManager: Relayout Window{79fa104 u0 com.android.todolist/com.android.todolist.MainActivity}: viewVisibility=0 req=684x421 {(0,0)(wrapxwrap) gr=CENTER sim={adjust=pan forwardNavigation} ty=APPLICATION fmt=TRANSLUCENT wanim=0x7f0f0002 surfaceInsets=Rect(64, 64 - 64, 64)
+72608:11-15 13:14:12.394  3095  3534 V WindowManager: Resize reasons for w=Window{79fa104 u0 com.android.todolist/com.android.todolist.MainActivity}:  contentInsetsChanged=false [0,0][0,0] visibleInsetsChanged=false [0,0][0,0] stableInsetsChanged=false [0,0][0,0] outsetsChanged=false [0,0][0,0] surfaceResized=false configChanged=true dragResizingChanged=false reportOrientationChanged=false displayCutoutChanged=false nextForceRelayoutToClient=false
+72609:11-15 13:14:12.402  2655  2655 D SurfaceFlinger: duplicate layer name: changing com.android.todolist/com.android.todolist.MainActivity[389] to com.android.todolist/com.android.todolist.MainActivity[389]#1
+72610:11-15 13:14:12.402  2655  2655 I SurfaceFlinger: id=1433 createSurf (812x549),1 flag=4, com.android.todolist/com.android.todolist.MainActivity[389]#1
+72611:11-15 13:14:12.404  3095  3534 D WindowManager: makeSurface duration=2 name=com.android.todolist/com.android.todolist.MainActivity[389]
+72612:11-15 13:14:12.406  3095  3129 D PersonaManagerService: notifyActivityDrawn u0 ComponentInfo{com.android.todolist/com.android.todolist.MainActivity} showWhenLocked=false type=1 windowingMode=1 fullscreen=true dockSide=-1
+72624:11-15 13:14:12.456   389   389 V InputMethodManager: Starting input: tba=com.android.todolist ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+72635:11-15 13:14:12.459  3095  3534 V InputMethodManagerService: windowGainedFocus : reason=WINDOW_FOCUS_GAIN client=android.os.BinderProxy@e4b04cb inputContext=null missingMethods= attribute=android.view.inputmethod.EditorInfo@f1ef6ed nm = com.android.todolist controlFlags=#104 softInputMode=#120 windowFlags=#1800002
+72648:11-15 13:14:12.479  3095  3534 D WindowManager: finishDrawingWindow: Window{79fa104 u0 com.android.todolist/com.android.todolist.MainActivity} mDrawState=DRAW_PENDING

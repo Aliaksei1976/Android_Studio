@@ -1,0 +1,70 @@
+ADB HW_1
+
+Сценарий напишите в .txt файл.
+.txt сценарий и .log файл прииложения todolist выгружайте на GitHub.
+Ссылкку на гитхаб присылайте в лс.
+
+
+ 1. Отобразить подключённый девайс в консоли.
+cd C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools (путь к папке, в которой установлена утилита 
+ADB)
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+
+.\adb devices
+List of devices attached
+4200c6aee40c6427        device (подключенный к ПК девайс Samsung)
+
+ 2. Вывести адрес приложения todolist в системе Android
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+
+.\adb shell 'pm list packages -f' | findstr todolist
+
+package:/data/app/com.android.todolist-jeuyqg9UgneaeaTF6Wt4Ow==/base.apk=com.android.todolist
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+(адрес установленного на девайсе приложения  Todolist  - base.apk=com.android.todolist)
+
+
+ 3. Установить .apk файл приложениия todolist на телефон с компьютера через  ADB
+
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> cd C:\Users\user\Desktop\New\001_ToDoList-master (указываем в коммандной строке PowerShell путь к дирректории, в которой сохранен файл Todolist.apk)
+
+.\adb install Todolist.apk
+(установка приложения на девайс, приложение устанволено)
+
+
+ 4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде.
+
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+
+.\adb shell /....путь в девайсе откуда копировать файл ..../ screencap/storage/emulated/0/DCIM/10.png 
+&& adb pull /....путь в ПК куда переместить файл ..../ 
+C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools
+
+
+ 5. Вывести в консоль логи приложения todolist
+5.1 PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+.\adb logcat
+--------- beginning of system в консоль выводятся все логи с девайса), Ctrl+C - остановка потока логов
+
+5.2. Фильтрация логов, поступивших в консоль с девайса, на предмет принадлежности логов приложению Todolist
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+
+.\adb logcat | findstr -rnw 'todolist'
+FINDSTR: /w пропускается
+
+ 6. Скопировать логи приложения todolist в файл на компьютер.
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools>
+.\adb logcat | findstr -rnw 'Todolist' > log_todolist.log
+
+
+ 7. Удалить приложение todolist с телефона через ADB
+
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+
+.\adb shell 'pm list packages -f' | findstr todolist
+package:/data/app/com.android.todolist-jeuyqg9UgneaeaTF6Wt4Ow==/base.apk=com.android.todolist
+
+PS C:\Users\user\Desktop\Home_Work_IT\PowerShell_for_Android\platform-tools> 
+
+.\adb uninstall com.android.todolist
+
